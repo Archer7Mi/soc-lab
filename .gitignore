@@ -1,0 +1,68 @@
+# Git ignore rules for SOC Lab repo
+
+# Sensitive Data
+*.key
+*.pem
+credentials.txt
+passwords.txt
+secrets.env
+.env
+.aws
+.azure
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# Artifacts we don't commit
+*.pcap
+*.pcapng
+*.vmem
+*.bin
+*.dump
+*.img
+*.iso
+*.vhd
+*.vmdk
+
+# Large log files
+*.log
+logs/
+*.tar.gz
+*.zip
+
+# Database backups
+*.sql
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Splunk
+splunk_dashboards/*.json
+splunk_apps/*/default/
+
+# Screenshots (store locally, not in repo)
+screenshots/
+# Exception: README screenshots are OK if < 1MB
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+/temp/
